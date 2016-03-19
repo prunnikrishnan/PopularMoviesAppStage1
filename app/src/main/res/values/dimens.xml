@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">2dp</dimen>
+    <dimen name="activity_vertical_margin">2dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="movie_detail_activity_topdiv">200dp</dimen>
+    <dimen name="movie_detail_activity_poster_height">300dp</dimen>
+
+    <!-- Movie in detail screen -->
+    <dimen name="parent_linear_layout_margin_top">5dp</dimen>
+    <dimen name="size_of_poster">0dp</dimen>
+    <dimen name="movie_basic_details_layout">200dp</dimen>
+    <dimen name="movie_title_text">20sp</dimen>
+    <dimen name="overview_layout_padding_left">5dp</dimen>
+    <dimen name="overview_layout_margin_top">10dp</dimen>
+    <dimen name="overview_margin_top">5dp</dimen>
+    <dimen name="overview_line_spacing">2dp</dimen>
+    <dimen name="overview_text_padding">5dp</dimen>
+</resources>

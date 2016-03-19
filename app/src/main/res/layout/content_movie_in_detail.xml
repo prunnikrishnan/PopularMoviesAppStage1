@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="@dimen/parent_linear_layout_margin_top"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       tools:context="com.myudacity.app.popularmoviesapp.MovieInDetailActivity"
+       tools:showIn="@layout/activity_movie_in_detail"
+       android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movie_detail_activity_topdiv">
+            <!-- Poster of the movie goes here-->
+            <ImageView
+                android:layout_width="@dimen/size_of_poster"
+                android:layout_height="match_parent"
+                android:id="@+id/movie_poster"
+                android:contentDescription="dummy Image"
+                android:layout_weight="1"
+                />
+            <!-- Basic details of the movie goes here-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/movie_basic_details_layout"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_orginal_title"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/movie_title_text"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_releasedate_title"
+                    android:layout_weight="1"
+                    android:text="@string/release_date_title"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_releasedate"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_userrating_title"
+                    android:layout_weight="1"
+                    android:text="@string/user_rating_title"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movie_userrating"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Overview goes here!!-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/overview_layout_padding_left"
+        android:layout_marginTop="@dimen/overview_layout_margin_top"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_overview_title"
+            android:textStyle="bold"
+            android:text="@string/overview_title"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/movie_overview"
+            android:lineSpacingExtra="@dimen/overview_line_spacing"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/overview_margin_top"
+            android:scrollbars="vertical"
+            android:paddingLeft="@dimen/overview_text_padding"
+            android:maxLines="50"
+            />
+        </LinearLayout>
+    </LinearLayout>
+

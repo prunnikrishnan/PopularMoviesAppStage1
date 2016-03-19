@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Movie Basket</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_in_detail">Movie Details</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!--Entries for sorting-->
+    <!--Key-->
+    <string name="sort_by_key">sortby</string>
+    <string-array name="sort_by_entries">
+       <item>Popular</item>
+        <item>Top Rated</item>
+   </string-array>
+    <string-array name="sort_by_entries_values">
+        <item>popularity.desc</item>
+        <item>vote_average.desc</item>
+    </string-array>
+    <string name="sort_by_default_value">popularity.desc</string>
+
+    <string name="title_sort_by">Sort By</string>
+
+    <!-- URL for the movie poster-->
+    <string name="movie_poster_url">http://image.tmdb.org/t/p/w185/</string>
+
+    <!-- Movie in details screen-->
+    <string name="release_date_title">Release Date:</string>
+    <string name="user_rating_title">User Rating:</string>
+    <string name="overview_title">Overview</string>
+</resources>
